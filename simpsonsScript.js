@@ -127,6 +127,55 @@ const simpsonsTrivia = [
       answers: ["Dr. Hibbert", "Dr. Nick", "Dr. Marvin Monroe"],
       correctAnswer: "Dr. Marvin Monroe"
     },
-    // Füge hier weitere Fragen hinzu, bis du 20 erreicht hast
+    {
+      question: "Welche berühmte Kneipe ist ein beliebter Treffpunkt für Homer und seine Freunde?",
+      answers: ["Moe's Tavern", "The Drunken Clam", "The Rusty Barnacle"],
+      correctAnswer: "Moe's Tavern"
+    },
+    {
+      question: "Welche Spruchtafel steht vor der Springfield Grundschule?",
+      answers: ["'Wissen ist Macht'", "'Lächle und sei fröhlich'", "'Freitag ist Waffeltag'"],
+      correctAnswer: "'Freitag ist Waffeltag'"
+    },
+    {
+      question: "Welche Sportart betreibt Bart Simpson am liebsten?",
+      answers: ["Baseball", "Skateboarding", "Fußball"],
+      correctAnswer: "Skateboarding"
+    },
+    {
+      question: "Wie lautet das Lieblingsgetränk von Marge Simpson?",
+      answers: ["Martini", "Weißwein", "Tequila Sunrise"],
+      correctAnswer: "Weißwein"
+    },
+    {
+      question: "Welches Tier ist das Haustier der Simpsons?",
+      answers: ["Katze (Snowball)", "Hund (Santa's Little Helper)", "Papagei (Captain Jack)"],
+      correctAnswer: "Hund (Santa's Little Helper)"
+    },
+    {
+      question: "Welches ist das Lieblingsessen von Homer Simpson?",
+      answers: ["Donuts", "Hamburger", "Pizza"],
+      correctAnswer: "Donuts"
+    },
+    {
+      question: "Welche Farbe hat die Kleidung von Marge Simpson?",
+      answers: ["Gelb", "Grün", "Rot"],
+      correctAnswer: "Grün"
+    },
+    {
+      question: "Welcher Charakter in den Simpsons ist berühmt für sein 'Ha-ha!'?",
+      answers: ["Bart Simpson", "Nelson Muntz", "Krusty der Clown"],
+      correctAnswer: "Nelson Muntz"
+    },
+    {
+      question: "Welche Instrumente spielt Lisa Simpson?",
+      answers: ["Saxophon", "Gitarre", "Klavier"],
+      correctAnswer: "Saxophon"
+    },
+    {
+      question: "Wer ist der Besitzer des Kwik-E-Mart?",
+      answers: ["Apu Nahasapeemapetilon", "Ned Flanders", "Comic Book Guy"],
+      correctAnswer: "Apu Nahasapeemapetilon"
+    }
   ];
   
