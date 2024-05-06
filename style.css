@@ -6,15 +6,14 @@ body {
     background-image: url(https://images4.alphacoders.com/114/1148429.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
 }
-
 .container {
     width: 800px;
     max-width: 80%;
@@ -23,7 +22,6 @@ body {
     padding: 10px;
     box-shadow: 0 0 10px 2px;
 }
-
 .btn {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -35,7 +33,6 @@ body {
     margin: auto;
     margin-top: 50px;
 }
-
 .btn:hover {
     border-color: black;
     cursor: pointer;
@@ -43,24 +40,20 @@ body {
     font-weight: bold;
     padding: 10px 20px;
 }
-
 .btn-grid {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px;
 }
-
 .controls {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .hide {
-    display: none;
+    display: none !important;
 }
-
 #playerPoints p {
     border: 2px solid #0b7cc0;
     border-radius: 5px;
@@ -69,7 +62,6 @@ body {
     display: inline;
     padding: 5px;
 }
-
 #question {
     display: flex;
     justify-content: center;
@@ -82,27 +74,28 @@ body {
     font-size: larger;
     background-color: rgba(255, 255, 255, 0.808);
 }
-
 .audioTheme {
     position: absolute;
     top: 8px;
     left: 16px;
     font-size: 18px;
 }
-
 @media (max-width: 768px) {
     .container {
         max-width: 90%;
     }
-
     #question {
         width: 95%;
     }
-}
-
-@media (max-width: 768px) {
     body {
         background-size: contain;
         background-image: url(https://www.chromethemer.com/wallpapers/phone/images/640/homer-simpson-2.png);
+    }
+    .btn-grid {
+        flex-direction: column;
+    }
+    .btn {
+        display: block;  
+        width: 100%;
     }
 }

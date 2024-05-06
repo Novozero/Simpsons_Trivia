@@ -16,7 +16,6 @@ nextButton.addEventListener('click', () =>{
 function startGame() {
     startButton.classList.add('hide');
     shuffleQuestions = simpsonsTrivia.sort(() => Math.random() - 0.5)
-    // shuffleAnswers = answers.sort(() => Math.random()- 0.5)
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
     setNextQuestion()
@@ -51,6 +50,8 @@ function selectAnswer(e) {
         alert('Richtig!')
         points +=10
         nextButton.classList.remove('hide')
+        answerButtonsElement.classList.add('hide')
+        questionElement.innerText = "Sehr gut! Weiter zu nächsten Frage!"
     } else {
         alert('Falsch')
         points -=10
@@ -59,7 +60,7 @@ function selectAnswer(e) {
         points = 0
     }
     if (currentQuestionIndex >= simpsonsTrivia.length -1) {
-        alert('Alle Fragen beantwortet!')
+        alert(`Alle Fragen beantwortet! Du hast ${points} / 200 Punkte!`)
         nextButton.classList.add('hide')
         answerButtonsElement.classList.add('hide')
         questionContainerElement.classList.add('hide')
@@ -70,6 +71,7 @@ function selectAnswer(e) {
 
 function resetState(){
     nextButton.classList.add('hide')
+    answerButtonsElement.classList.remove('hide')
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
@@ -149,7 +151,7 @@ const simpsonsTrivia = [
     },
     {
       question: "Welches Tier ist das Haustier der Simpsons?",
-      answers: ["Katze (Snowball)", "Hund (Santa's Little Helper)", "Papagei (Captain Jack)"],
+      answers: ["Fisch (Eddy)", "Hund (Santa's Little Helper)", "Papagei (Captain Jack)"],
       correctAnswer: "Hund (Santa's Little Helper)"
     },
     {
