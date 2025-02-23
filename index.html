@@ -6,21 +6,45 @@
     <title>Simpsons Trivia</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-        <div class="audioTheme"><audio controls src="https://www.televisiontunes.com/uploads/audio/The%20Simpsons.mp3">Your Browser cant load that file</audio></div>
-<div class="container">
-    <div id="playerPoints"><p>Points: <span id="points">0</span></p></div><br>
-    <div id="question-container" class="hide">
-    <div id="question">Question</div>
-    <div id="answer-buttons" class="btn-grid">
-        <button class="btn"></button>
+<body>
+    <!-- Audio player for the Simpsons theme song -->
+    <!-- Audioplayer für das Simpsons-Theme-Lied -->
+    <div class="audioTheme">
+        <audio controls src="https://www.televisiontunes.com/uploads/audio/The%20Simpsons.mp3">
+            Your browser can't load that file / Dein Browser kann diese Datei nicht laden
+        </audio>
     </div>
+    
+    <!-- Main container for the trivia game -->
+    <!-- Hauptcontainer für das Quiz-Spiel -->
+    <div class="container">
+        
+        <!-- Display player points -->
+        <!-- Punktestand des Spielers anzeigen -->
+        <div id="playerPoints">
+            <p>Points: <span id="points">0</span></p>
+        </div>
+        <br>
+        
+        <!-- Container for the question and answers, hidden at the start -->
+        <!-- Container für die Frage und Antworten, anfangs versteckt -->
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn"></button>
+            </div>
+        </div>
+        
+        <!-- Control buttons for starting and navigating through the quiz -->
+        <!-- Steuerungstasten zum Starten und Navigieren durch das Quiz -->
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
     </div>
-    <div class="controls">
-        <button id="start-btn" class="start-btn btn">Start</button>
-        <button id="next-btn" class="next-btn btn hide">Next</button>
-    </div>
-</div>
-<script src="simpsonsScript.js"></script> 
+    
+    <!-- Link to the external JavaScript file -->
+    <!-- Verknüpfung zur externen JavaScript-Datei -->
+    <script src="simpsonsScript.js"></script> 
 </body>
 </html>
